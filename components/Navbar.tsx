@@ -1,9 +1,25 @@
 // components/Navbar.tsx
-import React from "react";
+"use client";
+interface NavbarProps{
+  theme?:"light" | "dark";
+}
 
-export default function Navbar() {
+import React from "react";
+import {useEffect,  useState } from "react";
+
+export default function Navbar({theme = "dark"}: NavbarProps) {
+
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="w-full fixed top-0 left-0 z-50 bg-transparent px-8 py-5 flex justify-between items-center">
+    
+    <nav className={`w-full fixed top-0 left-0 z-50 bg-transparent px-8 py-5 flex justify-between items-center ${scrolled ? "bg-black/40 backdrop-blur-md" : ""}`}>
       {/* Logo */}
       <div className="text-orange-500 text-2xl font-bold"> <span className="bg-white p-2 rounded-md">khalis</span> Marketing</div>
 

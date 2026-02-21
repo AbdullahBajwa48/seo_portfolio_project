@@ -235,7 +235,7 @@ function Particles() {
 /* ── Main Export ── */
 export default function SeoGlobe() {
   return (
-    <div className="w-full h-[420px] md:h-[500px]">
+    <div className="w-full h-[500px] md:h-[600px]">
       <Canvas
         camera={{ position: [0, 0, 5], fov: 50 }}
         gl={{ antialias: true, alpha: true }}

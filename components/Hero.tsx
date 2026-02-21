@@ -119,21 +119,16 @@ export default function Hero() {
 
       {/* ── Right: Photo ── */}
       <div
-        className={`hidden md:flex flex-1 justify-center items-end relative
+        className={`hidden md:flex flex-1 justify-center items-end relative 
                     transition-all duration-1000 ease-out
                     ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         style={{ transitionDelay: "300ms" }}
       >
-        {/* Circle backdrop */}
-        {/* <div
-          // className="relative w-[600px] h-[600px] md:w-[650px] md:h-[650px]
-          //    rounded-full overflow-hidden bg-[url('/image.png')] bg-cover bg-top"    
-          
-        /> */}
+       
 
         <div className="hidden md:flex flex-1 justify-center items-center">
-  <SeoGlobe />
-</div>
+          <SeoGlobe />
+        </div>
 
       </div>
     </section>

@@ -15,23 +15,30 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     quote:
-      "Finally, an SEO agency that explains what they're actually doing. No contracts, clear reports, and real results. Our leads have doubled in six months.",
-    name: "Client Name",
-    business: "Business Type, Melbourne",
+      "Bhavleen is a miracle worker. He got my site ranked on page one of Google in a shorter time than he anticipated. I will definitely be referring my friends with businesses to Khalis Marketing.",
+    name: "Jordan Bright",
+    business: "DMG",
     initial: "C",
   },
   {
     quote:
-      "We'd been burned by two agencies before finding Khalis. The difference is night and day. They're responsive, honest, and our Google rankings have never been better.",
-    name: "Client Name",
-    business: "Business Type, Melbourne",
+      "Khalis Marketing has done a fantastic job helping with SEO for our website. Bhavleen's knowledge of modern marketing methods is evident in his results. We have already climbed to the top of the search results for many of our keywords. We are very happy with his work on our SEO needs and would highly recommend his expertise!",
+    name: "Kayley Maynard",
+    business: "Southwest Pool Care",
     initial: "C",
   },
   {
     quote:
-      "Straight-up communication, no BS. They told us what was realistic, delivered on it, and we've stayed because it works — not because we're locked in.",
-    name: "Client Name",
-    business: "Business Type, Melbourne",
+      "Having worked with Bhavleen for many years, we've seen firsthand and exceptional results he consistently delivers for companies. He helps websites rise to the top of search rankings, and his deep knowledge of SEO services shows in every project. He is reliable, skilled and always achieves top-tier results. If you are looking for outstanding marketing solutions, we highly recommend Bhavleen.",
+    name: "Michael Bright",
+    business: "Beyond the Books",
+    initial: "C",
+  },
+  {
+    quote:
+      "Bhavleen recently did content writing and SEO work for us. I have been very pleased with him, as he provides high quality content in a niche industry and is quite professional. I recommend his services to anybody, and infact, we look forward to working with him in future also.",
+    name: "Amir Akhtar",
+    business: "Mymskclinic",
     initial: "C",
   },
 ];
