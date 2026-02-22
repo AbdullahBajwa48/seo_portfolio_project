@@ -2,12 +2,15 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import Navbar from "@/components/Navbar";
 
 export default function ServicesCTA() {
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
+    <>
+    <Navbar/>;
     <section
       ref={ref}
       className="relative bg-[#0f0f0f] py-24 px-6 md:px-16 lg:px-24 overflow-hidden"
@@ -131,5 +134,6 @@ export default function ServicesCTA() {
         </div>
       </div>
     </section>
+    </>
   );
 }
