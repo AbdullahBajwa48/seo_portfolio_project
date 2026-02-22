@@ -6,6 +6,7 @@ interface NavbarProps{
 
 import React from "react";
 import {useEffect,  useState } from "react";
+import Link from "next/link";
 
 export default function Navbar({theme = "dark"}: NavbarProps) {
 
@@ -24,18 +25,30 @@ export default function Navbar({theme = "dark"}: NavbarProps) {
       <div className="text-orange-500 text-2xl font-bold"> <span className="bg-white p-2 rounded-md">khalis</span> Marketing</div>
 
       {/* Menu Links */}
+
       <ul className="hidden md:flex space-x-8 text-gray-300 font-medium">
-        <li className="hover:text-orange-500 cursor-pointer transition">Home</li>
-        <li className="hover:text-orange-500 cursor-pointer transition">Services</li>
-        <li className="hover:text-orange-500 cursor-pointer transition">About Me</li>
-        <li className="hover:text-orange-500 cursor-pointer transition">Portfolio</li>
-        <li className="hover:text-orange-500 cursor-pointer transition">Contact Me</li>
+        <li className="hover:text-orange-500 transition">
+          <Link href="/">Home</Link>
+        </li>
+        <li className="hover:text-orange-500 transition">
+          <Link href="/about">About Me</Link>
+        </li>
+        <li className="hover:text-orange-500 transition">
+          <Link href="/services">Services</Link>
+        </li>
+        <li className="hover:text-orange-500 transition">
+          <Link href="/locations">Locations</Link>
+        </li>
+        <li className="hover:text-orange-500 transition">
+          <Link href="/case-studies">Case Studies</Link>
+        </li>
       </ul>
 
       {/* CTA Button */}
       <div className="hidden md:block">
         <button className="bg-orange-500 text-white px-5 py-2 rounded-lg hover:bg-orange-600 transition">
-          Hire Me
+          
+          <Link href="/about">Hire Me</Link>
         </button>
       </div>
 
