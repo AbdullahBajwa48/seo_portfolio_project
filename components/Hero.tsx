@@ -61,7 +61,7 @@ export default function Hero() {
 
         {/* Role */}
         <h1
-          className={`text-orange-500 text-5xl md:text-6xl font-extrabold leading-tight mb-7 ${fadeUp(300)}`}
+          className={`mt-10 md:mt-0 text-orange-500 text-5xl md:text-6xl font-extrabold leading-tight mb-7 ${fadeUp(300)}`}
           style={style(300)}
         >
          Melbourne's SEO Agency That Actually Delivers
