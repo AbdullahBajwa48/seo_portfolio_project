@@ -47,87 +47,84 @@ export default function Hero() {
   });
 
   return (
-    <section className="relative min-h-screen bg-[#0f0f0f] flex items-center overflow-hidden px-6 md:px-16 lg:px-24">
+    <section className="relative min-h-screen bg-[#0f0f0f] flex items-center overflow-hidden px-6 md:px-16 lg:px-24 pt-24 pb-16 md:pt-28 md:pb-0">
       {/* Background ambient glow */}
       <div className="absolute left-1/4 top-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-orange-500/5 blur-[140px] pointer-events-none" />
 
-      {/* ── Left Content ── */}
-      <div className="relative z-10 flex-1 max-w-lg">
+      {/* ── Wrapper: stacks on mobile, side-by-side on md+ ── */}
+      <div className="relative z-10 w-full flex flex-col md:flex-row items-center gap-12 md:gap-8">
 
+        {/* ── Left Content ── */}
+        <div className="flex-1 w-full max-w-lg mx-auto md:mx-0">
 
-
-   
-        
-
-        {/* Role */}
-        <h1
-          className={`mt-15 md:mt-0 text-orange-500 text-5xl md:text-6xl font-extrabold leading-tight mb-7 ${fadeUp(300)}`}
-          style={style(300)}
-        >
-         Melbourne's SEO Agency That Actually Delivers
-        </h1>
-
-        {/* Social icons */}
-        <p className={`text-white font-semibold text-lg mb-3 ${fadeUp(350)}`} style={style(350)}>
-  SEO Without the Runaround.
-        </p>
-
-        {/* Supporting Text */}
-        <p className={`text-gray-400 text-sm leading-relaxed mb-8 max-w-md ${fadeUp(400)}`} style={style(400)}>
-        No long-term contracts. No empty promises. Just transparent strategies that get your business found on Google. Khalis Marketing helps Melbourne businesses grow their organic traffic, generate quality leads, and outrank competitors — all without locking you into contracts you can't escape.
-        </p>
-
-        {/* CTA Buttons */}
-        <div
-          className={`flex items-center gap-4 mb-12 ${fadeUp(500)}`}
-          style={style(500)}
-        >
-          <a
-            href="#"
-            className="bg-orange-500 hover:bg-orange-600 active:scale-95 text-white
-                       font-semibold px-7 py-2.5 rounded text-sm transition-all duration-300"
+          {/* Role */}
+          <h1
+            className={`text-orange-500 text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-7 ${fadeUp(300)}`}
+            style={style(300)}
           >
-            Get Your Free SEO Audit
-          </a>
-          <a
-            href="#"
-            className="border border-gray-500 hover:border-orange-500 active:scale-95
-                       text-white font-semibold px-7 py-2.5 rounded text-sm transition-all duration-300"
-          >
-            Book a Call
-          </a>
-        </div>
+            Melbourne&apos;s SEO Agency That Actually Delivers
+          </h1>
 
-        {/* Stats */}
-        <div
-          className={`flex rounded overflow-hidden w-fit ${fadeUp(600)}`}
-          style={style(600)}
-        >
-          {stats.map((stat, i) => (
-            <div
-              key={stat.label}
-              className={`px-6 py-3 bg-[#1a1a1a] ${
-                i !== stats.length - 1 ? "border-r border-gray-700/60" : ""
-              }`}
+          {/* Subheading */}
+          <p className={`text-white font-semibold text-lg mb-3 ${fadeUp(350)}`} style={style(350)}>
+            SEO Without the Runaround.
+          </p>
+
+          {/* Supporting Text */}
+          <p className={`text-gray-400 text-sm leading-relaxed mb-8 max-w-md ${fadeUp(400)}`} style={style(400)}>
+            No long-term contracts. No empty promises. Just transparent strategies that get your business found on Google. Khalis Marketing helps Melbourne businesses grow their organic traffic, generate quality leads, and outrank competitors — all without locking you into contracts you can&apos;t escape.
+          </p>
+
+          {/* CTA Buttons */}
+          <div
+            className={`flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 mb-12 ${fadeUp(500)}`}
+            style={style(500)}
+          >
+            <a
+              href="#"
+              className="w-full sm:w-auto text-center bg-orange-500 hover:bg-orange-600 active:scale-95 text-white
+                         font-semibold px-7 py-2.5 rounded text-sm transition-all duration-300"
             >
-              <p className="text-white font-bold text-xl leading-none">{stat.value}</p>
-              <p className="text-gray-400 text-xs mt-1">{stat.label}</p>
-            </div>
-          ))}
+              Get Your Free SEO Audit
+            </a>
+            <a
+              href="#"
+              className="w-full sm:w-auto text-center border border-gray-500 hover:border-orange-500 active:scale-95
+                         text-white font-semibold px-7 py-2.5 rounded text-sm transition-all duration-300"
+            >
+              Book a Call
+            </a>
+          </div>
+
+          {/* Stats */}
+          <div
+            className={`flex rounded overflow-hidden w-full sm:w-fit ${fadeUp(600)}`}
+            style={style(600)}
+          >
+            {stats.map((stat, i) => (
+              <div
+                key={stat.label}
+                className={`flex-1 sm:flex-none px-4 sm:px-6 py-3 bg-[#1a1a1a] ${
+                  i !== stats.length - 1 ? "border-r border-gray-700/60" : ""
+                }`}
+              >
+                <p className="text-white font-bold text-xl leading-none">{stat.value}</p>
+                <p className="text-gray-400 text-xs mt-1">{stat.label}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
 
-      {/* ── Right: Photo ── */}
-      <div
-        className={`hidden md:flex flex-1 justify-center items-end relative 
-                    transition-all duration-1000 ease-out
-                    ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
-        style={{ transitionDelay: "300ms" }}
-      >
-       
-
-        <div className="hidden md:flex flex-1 justify-center items-center">
-          <SeoGlobe />
+        {/* ── Right: Globe ── */}
+        <div
+          className={`w-full md:flex-1 flex justify-center items-center
+                      transition-all duration-1000 ease-out
+                      ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+          style={{ transitionDelay: "300ms" }}
+        >
+          <div className="w-full max-w-[340px] sm:max-w-[420px] md:max-w-full">
+            <SeoGlobe />
+          </div>
         </div>
 
       </div>

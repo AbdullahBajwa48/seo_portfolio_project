@@ -126,6 +126,7 @@ export function ServiceCard({
         <div className="mt-5 pt-4 border-t border-gray-800/60">
           <Link
             href={service.href}
+            
             className="inline-flex items-center gap-1.5 text-orange-500 text-xs
                        font-bold uppercase tracking-wider hover:gap-3
                        transition-all duration-300"
