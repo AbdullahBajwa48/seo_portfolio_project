@@ -16,7 +16,7 @@ const navLinks = [
   { label: "Locations",    href: "/locations"    },
   { label: "Blog",         href: "/blog"    },
   { label: "contact",      href: "/contact"    },
-  { label: "Free Audit",      href: "/contact"    },
+  { label: "FreeAudit",    href: "/free-seo-audit"    },
 
 ];
 

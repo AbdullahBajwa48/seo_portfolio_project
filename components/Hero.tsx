@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { FiInstagram, FiLinkedin, FiGlobe } from "react-icons/fi";
 import { SiBehance } from "react-icons/si";
 import SeoGlobe from "@/components/SeoGlobe";
+import SeoDashboard from "@/components/SeoDashboard";
 
 interface StatItem {
   value: string;
@@ -127,7 +128,7 @@ export default function Hero() {
        
 
         <div className="hidden md:flex flex-1 justify-center items-center">
-          <SeoGlobe />
+          <SeoDashboard />
         </div>
 
       </div>
