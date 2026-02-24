@@ -17,7 +17,7 @@ interface SocialLink {
 }
 
 const stats: StatItem[] = [
-  { value: "10+", label: "Experiences" },
+  { value: "10+", label:  "Experiences" },
   { value: "200+", label: "Project done" },
   { value: "80+", label: "Happy Clients" },
 ];
