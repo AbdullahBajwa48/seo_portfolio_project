@@ -14,11 +14,11 @@ export const metadata: Metadata = {
 export default function CaseStudies(){
     return (
         <>
-            <Navbar/>;
-            <Hero/>;
-            <Intro/>;
-            <Cases/>;
-            <Cta/>;
+            <Navbar/>
+            <Hero/>
+            <Intro/>
+            <Cases/>
+            <Cta/>
         </>
     );
 }

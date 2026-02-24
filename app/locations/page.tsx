@@ -14,11 +14,11 @@ export const metadata: Metadata = {
 export default function Locations(){
     return (
         <>
-            <Navbar />;
-            <Hero />;
-            <Intro />;
-            <Loc />;
-            <Cta />;
+            <Navbar />
+            <Hero />
+            <Intro />
+            <Loc />
+            <Cta />
         </>
     );
 }

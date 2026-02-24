@@ -16,12 +16,12 @@ export const metadata: Metadata = {
 export default function ServicePage(){
     return (
         <>
-            <ServiceHero/>;
-            <ServiceIntro/>;
-            <ServiceCore/>;
-            <ServicePlatform/>;
-            <ServiceWeb/>;
-            <ServiceCta/>;
+            <ServiceHero/>
+            <ServiceIntro/>
+            <ServiceCore/>
+            <ServicePlatform/>
+            <ServiceWeb/>
+            <ServiceCta/>
 
         </>
     )
