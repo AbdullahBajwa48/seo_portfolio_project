@@ -14,6 +14,10 @@ const navLinks = [
   { label: "About Me",     href: "/about"        },
   { label: "Case Studies", href: "/case-studies" },
   { label: "Locations",    href: "/locations"    },
+  { label: "Blog",         href: "/blog"    },
+  { label: "contact",      href: "/contact"    },
+  { label: "Free Audit",      href: "/contact"    },
+
 ];
 
 export default function Navbar({ theme = "dark" }: NavbarProps) {
@@ -53,7 +57,7 @@ export default function Navbar({ theme = "dark" }: NavbarProps) {
           {/* Logo */}
           <Link href="/"
             className="text-orange-500 font-extrabold text-xl tracking-tight shrink-0">
-            <span className="bg-white p-2 rounded-md">Kahlis</span> Marketing
+            <span className="bg-white p-2 rounded-md">Khalis</span> Marketing
           </Link>
 
           {/* Desktop nav links */}
