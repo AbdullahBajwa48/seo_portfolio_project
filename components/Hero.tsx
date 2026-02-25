@@ -115,7 +115,7 @@ export default function Hero() {
             ))}
           </div>
         </div>
-
+      </div>
       {/* ── Right: Photo ── */}
       <div
         className={`hidden md:flex flex-1 justify-center items-end relative 
