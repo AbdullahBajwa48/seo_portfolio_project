@@ -9,7 +9,7 @@ const emergingServices = [
     icon: "🤖",
     title: "LLM SEO (AI Search Optimisation)",
     tag: "Future-Ready",
-    href: "/services/llm-seo",
+    href: "/services/LLM-seo",
     description:
       "Search is evolving. Tools like ChatGPT, Perplexity, and Google's AI Overviews are changing how people find information. I help your brand get cited and recommended by AI-powered search engines — so you're visible wherever your customers are looking.",
   },
@@ -20,7 +20,7 @@ const webServices = [
     icon: "🖥️",
     title: "Website Design",
     tag: "Full Package",
-    href: "/services/website-design",
+    href: "/services/Website_design",
     description:
       "A website built for search from day one. I design fast, mobile-friendly, SEO-ready websites that look professional and convert visitors into customers. No templates that tank your rankings — just clean, strategic design that works.",
   },
@@ -158,8 +158,8 @@ export default function EmergingAndWebServices() {
                   right from day one — no retrofitting required.
                 </p>
               </div>
-              <a
-                href="/services/website-design"
+              <a 
+                href="/services/Website_design"
                 className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600
                            active:scale-95 text-white font-bold px-5 py-2.5 rounded
                            text-xs transition-all duration-300 w-fit group"
