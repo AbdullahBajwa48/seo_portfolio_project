@@ -115,7 +115,7 @@ export default function Hero() {
             ))}
           </div>
         </div>
-
+        
       {/* ── Right: Photo ── */}
       <div
         className={`hidden md:flex flex-1 justify-center items-end relative 
@@ -128,7 +128,7 @@ export default function Hero() {
         <div className="hidden md:flex flex-1 justify-center items-center">
           <SeoDashboard />
         </div>
-
+</div>    
       </div>
     </section>
   );
