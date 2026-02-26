@@ -82,14 +82,14 @@ export default function Hero() {
             style={style(500)}
           >
             <a
-              href="#"
+              href="/free-seo-audit"
               className="w-full sm:w-auto text-center bg-orange-500 hover:bg-orange-600 active:scale-95 text-white
                          font-semibold px-7 py-2.5 rounded text-sm transition-all duration-300"
             >
               Get Your Free SEO Audit
             </a>
             <a
-              href="#"
+              href="/contact"
               className="w-full sm:w-auto text-center border border-gray-500 hover:border-orange-500 active:scale-95
                          text-white font-semibold px-7 py-2.5 rounded text-sm transition-all duration-300"
             >
