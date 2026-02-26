@@ -20,7 +20,7 @@ const webServices = [
     icon: "🖥️",
     title: "Website Design",
     tag: "Full Package",
-    href: "/services/Website_design",
+    href: "/services/website-design",
     description:
       "A website built for search from day one. I design fast, mobile-friendly, SEO-ready websites that look professional and convert visitors into customers. No templates that tank your rankings — just clean, strategic design that works.",
   },
@@ -136,7 +136,7 @@ export default function EmergingAndWebServices() {
                 service={service}
                 index={i}
                 inView={inView}
-                
+              
               />
             ))}
 

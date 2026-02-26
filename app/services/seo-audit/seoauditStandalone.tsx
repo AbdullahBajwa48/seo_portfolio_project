@@ -121,7 +121,7 @@ export default function SeoAuditStandaloneVsOngoing() {
               </ul>
 
               <a
-                href="#"
+                href="/free-seo-audit"
                 className={`inline-flex items-center justify-center gap-2 font-bold text-sm
                             px-6 py-3 rounded transition-all duration-300 active:scale-95 group/btn
                   ${opt.highlight

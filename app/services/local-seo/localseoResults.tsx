@@ -101,7 +101,7 @@ export default function LocalSeoResults() {
               </ul>
 
               <div className="border-t border-gray-800/60 pt-4">
-                <a href="#"
+                <a href="/case-studies"
                   className="inline-flex items-center gap-1.5 text-orange-500 text-xs
                              font-bold uppercase tracking-wider hover:gap-3 transition-all duration-300">
                   Read Case Study
