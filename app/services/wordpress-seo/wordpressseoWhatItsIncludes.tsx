@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
+//comment for includes
 const included = [
   { icon: "🔍", title: "WordPress SEO Audit", desc: "Full technical, on-page, and content analysis specific to your WordPress setup." },
   { icon: "⚙️", title: "SEO Plugin Configuration", desc: "Proper setup of Yoast, Rank Math, or your preferred plugin — all critical settings configured." },
