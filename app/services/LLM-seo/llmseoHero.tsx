@@ -85,7 +85,7 @@ export default function LlmSeoHero() {
               className="flex flex-col sm:flex-row gap-3 mb-10"
             >
               <a
-                href="#"
+                href="/free-seo-audit"
                 className="bg-orange-500 hover:bg-orange-600 active:scale-95 text-white
                            font-bold px-7 py-3.5 rounded transition-all duration-300 text-sm
                            inline-flex items-center justify-center gap-2 group"
@@ -94,7 +94,7 @@ export default function LlmSeoHero() {
                 <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
               </a>
               <a
-                href="#"
+                href="/contact"
                 className="border border-gray-600 hover:border-orange-500 text-white
                            hover:text-orange-400 font-semibold px-7 py-3.5 rounded
                            transition-all duration-300 text-sm active:scale-95

@@ -10,7 +10,7 @@ export default function ServicesCTA() {
 
   return (
     <>
-    <Navbar/>;
+    <Navbar/>
     <section
       ref={ref}
       className="relative bg-[#0f0f0f] py-24 px-6 md:px-16 lg:px-24 overflow-hidden"
@@ -86,7 +86,7 @@ export default function ServicesCTA() {
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10"
           >
             <a
-              href="#"
+              href="/free-seo-audit"
               className="w-full sm:w-auto bg-orange-500 hover:bg-orange-600 active:scale-95
                          text-white font-bold px-8 py-3.5 rounded transition-all duration-300
                          text-sm inline-flex items-center justify-center gap-2 group"
@@ -95,7 +95,7 @@ export default function ServicesCTA() {
               <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
             </a>
             <a
-              href="#"
+              href="/contact"
               className="w-full sm:w-auto border border-gray-600 hover:border-orange-500
                          text-white hover:text-orange-400 font-semibold px-8 py-3.5 rounded
                          transition-all duration-300 text-sm active:scale-95

@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
-export default function WebDesignCta() {
+export default function WerribeeCta() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
@@ -33,7 +33,7 @@ export default function WebDesignCta() {
             transition={{ duration: 0.5, ease: "easeOut" }}
             className="text-orange-500 text-sm font-bold tracking-widest uppercase mb-4"
           >
-            Free Website Consultation
+            Free Werribee SEO Audit
           </motion.p>
 
           <motion.h2
@@ -43,8 +43,8 @@ export default function WebDesignCta() {
             className="text-white text-3xl md:text-4xl lg:text-5xl font-extrabold
                        leading-tight mb-6"
           >
-            Ready for a Website That{" "}
-            <span className="text-orange-500">Actually Works?</span>
+            See Where You Rank{" "}
+            <span className="text-orange-500">in Werribee</span>
           </motion.h2>
 
           <motion.p
@@ -53,9 +53,8 @@ export default function WebDesignCta() {
             transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
             className="text-gray-400 text-base leading-relaxed max-w-xl mx-auto mb-3"
           >
-            Let&apos;s talk about what you need. Book a free consultation and I&apos;ll assess
-            your current situation, discuss your goals, and show you what a properly
-            built website can do for your business.
+            I&apos;ll audit your current local visibility — where you&apos;re showing up, where
+            you&apos;re missing, and what competitors are doing better.
           </motion.p>
 
           <motion.p
@@ -64,7 +63,7 @@ export default function WebDesignCta() {
             transition={{ duration: 0.5, ease: "easeOut", delay: 0.28 }}
             className="text-white font-semibold text-sm mb-10"
           >
-            No obligations. No pressure. Just straight answers.
+            No cost. No obligation. Just straight answers.
           </motion.p>
 
           <motion.div
@@ -79,7 +78,7 @@ export default function WebDesignCta() {
                          text-white font-bold px-8 py-3.5 rounded transition-all duration-300
                          text-sm inline-flex items-center justify-center gap-2 group"
             >
-              Get a Free Website Consultation
+              Get Your Free Werribee SEO Audit
               <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
             </a>
             <a
@@ -91,15 +90,6 @@ export default function WebDesignCta() {
             >
               📞 Book a Call with Bhavleen
             </a>
-            <a
-              href="#"
-              className="w-full sm:w-auto border border-gray-800 hover:border-gray-600
-                         text-gray-400 hover:text-white font-semibold px-8 py-3.5 rounded
-                         transition-all duration-300 text-sm active:scale-95
-                         inline-flex items-center justify-center"
-            >
-              Get a Quote
-            </a>
           </motion.div>
 
           <motion.div
@@ -109,7 +99,12 @@ export default function WebDesignCta() {
             className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2
                        pt-8 border-t border-gray-800"
           >
-            {["✓ No lock-in contracts", "✓ SEO included as standard", "✓ Direct access to Bhavleen", "✓ Training & handover included"].map((item) => (
+            {[
+              "✓ No lock-in contracts",
+              "✓ Werribee-specific strategy",
+              "✓ Direct access to Bhavleen",
+              "✓ Google Maps included",
+            ].map((item) => (
               <span key={item} className="text-gray-600 text-xs">{item}</span>
             ))}
           </motion.div>

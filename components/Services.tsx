@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import Link from "next/link";
 
 /* ── Types ── */
 interface Service {
@@ -9,6 +10,8 @@ interface Service {
   title: string;
   description: string;
   tag: string;
+  link: string;
+
 }
 
 /* ── Data ── */
@@ -17,6 +20,7 @@ const services: Service[] = [
     icon: "📍",
     title: "Local SEO",
     tag: "Most Popular",
+    link: "/services/local-seo",
     description:
       "Get found by customers in your area. We optimise your Google Business Profile, build local citations, and help you rank in the map pack for searches that matter.",
   },
@@ -24,6 +28,7 @@ const services: Service[] = [
     icon: "⚙️",
     title: "Technical SEO",
     tag: "Foundation",
+    link: "/services/technical-seo",
     description:
       "Site speed, mobile performance, crawlability, indexing issues — we fix the backend problems holding your rankings back.",
   },
@@ -31,6 +36,7 @@ const services: Service[] = [
     icon: "📝",
     title: "On-Page SEO",
     tag: "Content",
+    link: "/services/on-page-seo",
     description:
       "Strategic keyword research, optimised content, meta tags, and internal linking that tell Google exactly what your pages are about.",
   },
@@ -38,6 +44,7 @@ const services: Service[] = [
     icon: "🔗",
     title: "Link Building",
     tag: "Authority",
+    link: "/services/link-building",
     description:
       "Quality backlinks from relevant Australian websites. No spammy link farms. No PBNs. Just legitimate outreach that builds your domain authority.",
   },
@@ -45,6 +52,7 @@ const services: Service[] = [
     icon: "🔍",
     title: "SEO Audits",
     tag: "Analysis",
+    link: "/services/seo-audit",
     description:
       "A comprehensive analysis of your website's SEO health — technical issues, content gaps, competitor insights, and a clear action plan.",
   },
@@ -52,6 +60,7 @@ const services: Service[] = [
     icon: "🖥️",
     title: "Website Design",
     tag: "Full Package",
+    link: "/services/website-design",
     description:
       "SEO-ready websites built for speed, user experience, and conversions. Your online presence, done right from the start.",
   },
@@ -125,7 +134,7 @@ function ServiceCard({
                      opacity-0 group-hover:opacity-100 transition-all duration-300
                      translate-x-[-4px] group-hover:translate-x-0"
         >
-          Learn more <span>→</span>
+         <Link href={service.link}>Learn more</Link> <span>→</span>
         </span>
       </div>
 
@@ -219,7 +228,7 @@ export default function Services() {
           className="flex justify-center mt-12"
         >
           <a
-            href="#"
+            href="/services"
             className="inline-flex items-center gap-2 border border-orange-500
                        text-orange-500 hover:bg-orange-500 hover:text-white
                        font-semibold px-8 py-3 rounded transition-all duration-300
