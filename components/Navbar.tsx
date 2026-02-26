@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 interface NavbarProps {
   theme?: "dark" | "light";
@@ -23,6 +24,8 @@ const navLinks = [
 export default function Navbar({ theme = "dark" }: NavbarProps) {
   const [scrolled,   setScrolled]   = useState(false);
   const [menuOpen,   setMenuOpen]   = useState(false);
+
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -66,10 +69,14 @@ export default function Navbar({ theme = "dark" }: NavbarProps) {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className={`text-sm font-medium transition-colors duration-300 ${linkColor}`}
+                  className={`text-sm font-medium transition-colors duration-300
+                    ${pathname === link.href
+                      ? "text-orange-500"
+                      : linkColor
+                    }`}
                 >
                   {link.label}
-                </Link>
+               </Link>
               </li>
             ))}
           </ul>

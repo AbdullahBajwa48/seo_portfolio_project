@@ -212,7 +212,7 @@ export default function FAQ() {
             We're happy to answer anything — no sales pressure, just straight answers.
           </p>
           <a
-            href="#contact"
+            href="/contact"
             className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600
                        active:scale-95 text-white font-semibold px-7 py-3 rounded
                        transition-all duration-300 text-sm group"

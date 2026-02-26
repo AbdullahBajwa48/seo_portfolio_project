@@ -66,7 +66,7 @@ export default function FinalCTA() {
         >
           {/* Primary */}
           <a
-            href="#"
+            href="/free-seo-audit"
             className="w-full sm:w-auto bg-orange-500 hover:bg-orange-600 active:scale-95
                        text-white font-bold px-8 py-3.5 rounded transition-all duration-300
                        text-sm group inline-flex items-center justify-center gap-2"
@@ -77,7 +77,7 @@ export default function FinalCTA() {
 
           {/* Secondary */}
           <a
-            href="#"
+            href="/contact"
             className="w-full sm:w-auto border border-gray-600 hover:border-orange-500
                        text-white hover:text-orange-500 font-semibold px-8 py-3.5 rounded
                        transition-all duration-300 text-sm active:scale-95
@@ -141,10 +141,10 @@ export default function FinalCTA() {
 
           {/* Nav links */}
           <div className="flex items-center gap-6 text-gray-500 text-xs">
-            {["Services", "About", "Case Studies", "FAQ", "Contact"].map((link) => (
+            {["Services", "About", "Case Studies", "Free Audit", "Contact"].map((link) => (
               <a
                 key={link}
-                href="#"
+                href={`/${link.toLowerCase().replace(/\s+/g, "-")}`}
                 className="hover:text-orange-500 transition-colors duration-300"
               >
                 {link}

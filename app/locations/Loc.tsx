@@ -8,7 +8,7 @@ const locations = [
   {
     name: "Werribee",
     number: "01",
-    href: "/locations/werribee",
+    href: "/locations/seo-agency-werribee",
     description:
       "Werribee's growing population means more customers searching locally. I help Werribee businesses dominate local search results and Google Maps.",
     stat: { value: "↑", label: "Growing Population" },
@@ -17,7 +17,7 @@ const locations = [
   {
     name: "Hoppers Crossing",
     number: "02",
-    href: "/locations/hoppers-crossing",
+    href: "/locations/seo-agency-hoppers-crossing",
     description:
       "One of Melbourne's busiest western suburbs. Stand out from competitors with SEO that puts your business in front of local customers actively searching.",
     stat: { value: "🏙️", label: "Busiest Western Suburb" },
@@ -26,7 +26,7 @@ const locations = [
   {
     name: "Tarneit",
     number: "03",
-    href: "/locations/tarneit",
+    href: "/locations/seo-agency-tarneit",
     description:
       "One of Australia's fastest-growing suburbs. Get in front of new residents searching for local services before your competitors do.",
     stat: { value: "#1", label: "Fastest Growing in AU" },
@@ -35,7 +35,7 @@ const locations = [
   {
     name: "Melton",
     number: "04",
-    href: "/locations/melton",
+    href: "/locations/seo-agency-melton",
     description:
       "A rapidly expanding area with increasing demand for local services. I help Melton businesses capture local search traffic and grow their customer base.",
     stat: { value: "↗", label: "Rapidly Expanding" },

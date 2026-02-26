@@ -159,7 +159,7 @@ function CaseStudyCard({
 
         {/* ── CTA ── */}
         <a
-          href="#"
+          href="/case-studies"
           className="inline-flex items-center gap-2 text-orange-500 text-sm font-semibold
                      hover:gap-3 transition-all duration-300 group/link"
         >

@@ -36,24 +36,7 @@ const platformServices = [
       "For software companies, SEO is a long-term growth channel. I build strategies focused on product-led content, comparison keywords, feature pages, and link building that positions your SaaS brand as an authority in your niche.",
   },
   
-  {
-    icon: "🌀",
-    title: "LLM SEO",
-    tag: "Design-LLM",
-    href: "/services/LLM-seo",
-    description:
-      "Search is evolving. Tools like ChatGPT, Perplexity, and Google's AI Overviews are changing how people find information. I help your brand get cited and recommended by AI-powered search engines — so you're visible wherever your customers are looking.",
-  },
- 
   
-  {
-    icon: "🔷",
-    title: "Website Design",
-    tag: "Scalable",
-    href: "/services/Website_design",
-    description:
-      "A website built for search from day one. I design fast, mobile-friendly, SEO-ready websites that look professional and convert visitors into customers. No templates that tank your rankings — just clean, strategic design that works.",
-  },
 ];
 
 export default function PlatformSEOServices() {
